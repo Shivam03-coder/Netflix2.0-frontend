@@ -1,0 +1,22 @@
+:root {
+  --ShadowColor: rgba(0, 0, 0, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.LoginPage {
+  width: 100%;
+  background: var(--ShadowColor) url("./assets/Netflix-Background.jpg")
+    no-repeat center;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}  
+

@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .inputboxes {
+    @apply w-72  h-14 font-Popins text-lg overflow-hidden bg-transparent rounded-lg border-[1px] border-neutral-200;
+  }
+  .inputboxes:focus,
+  .inputboxes:focus-within {
+    @apply outline-2 outline-[cyan] rounded-xl transition-all;
+  }
+
+  .centerContent {
+    @apply flex justify-center items-center;
+  }
+
+  .Moviesheadertext {
+    @apply text-xl font-medium font-Popins;
+  }
+  
+}
+
+@layer utilities {
+  .Scrollbar-none::-webkit-scrollbar {
+    width: 0px;
+  }
+  .Scrollbar-none {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    /* -webkit-overflow-scrolling: touch; */
+    cursor: pointer;
+  }
+}
