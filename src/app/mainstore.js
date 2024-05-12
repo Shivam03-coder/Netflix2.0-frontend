@@ -22,7 +22,7 @@ const store = configureStore({
     getDefaultMiddleware({
       serializableCheck: false,
     }).concat(apiSlice.middleware),
-  devTools: true,
+  devTools: false,
 });
 setupListeners(store.dispatch);
 
